@@ -36,7 +36,13 @@ app.post('/webhook/', function (req, res) {
 				sendGenericMessage(sender)
 				continue
 			}
-			sendTextMessage(sender, "Hello world!")
+			sendTextMessage(sender, "A complete blood count (CBC) is a blood test used to evaluate your overall health and detect a wide range of disorders, including anemia, infection and leukemia.
+			A complete blood count test measures several components and features of your blood, including:
+			- Red blood cells, which carry oxygen
+			- White blood cells, which fight infection
+			- Hemoglobin, the oxygen-carrying protein in red blood cells
+			- Hematocrit, the proportion of red blood cells to the fluid component, or plasma, in your blood
+			- Platelets, which help with blood clotting  Abnormal increases or decreases in cell counts as revealed in a complete blood count may indicate that you have an underlying medical condition that calls for further evaluation.")
 		}
 		if (event.postback) {
 			text = JSON.stringify(event.postback)
