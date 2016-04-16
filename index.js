@@ -38,14 +38,6 @@ app.post('/webhook/', function (req, res) {
 			}
 			sendTextMessage(sender, "A complete blood count (CBC) is a blood test used to evaluate your overall health and detect a wide range of disorders, including anemia, infection and leukemia.")
 		}
-		
-		
-	}
-			sendTextMessage(Hello, "Hello World!")
-		}
-		
-		
-		
 		if (event.postback) {
 			text = JSON.stringify(event.postback)
 			sendTextMessage(sender, "Postback received: "+text.substring(0, 200), token)
